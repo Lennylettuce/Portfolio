@@ -80,7 +80,7 @@ main {
    justify-content: center;
    float: center;
    flex-direction: column;
-   flex-basis: content;
+   float: center;
    flex-wrap: wrap;
 }
 
