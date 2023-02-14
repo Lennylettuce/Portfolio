@@ -1,5 +1,5 @@
 /*
-	New portfolio page
+	New portfolio page, finish media query and layout structure
 */
 
 * {
@@ -59,18 +59,19 @@ main {
 
 .about-me {
     margin-bottom: 20px;
-    padding: 50px;
     height: 300px;
     background-color:rgb(24, 121, 113);
     opacity: 0.5;
     color:whitesmoke;
     column-count: 2;
     column-rule-style: dashed;  
+    justify-content: center;
 }
 
-/*get column lines show up in .work section*/
+/**/
 
 .work {
+    display: flex;
     margin-bottom: 20px;
     padding: 0;
     height: 800px;
@@ -86,6 +87,7 @@ main {
 
 
 .works1 {
+    display: flex;
     border-style: solid;
     border-width: 2px;
     border-radius: 25%;
@@ -95,6 +97,7 @@ main {
     height: 100px;
     box-shadow: 2px 2px 20px 20px rgba(5, 61, 30, 0.25);
     justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -116,6 +119,7 @@ main {
 
 
 .works {
+    display: flex;
     border-style: solid;
     border-width: 2px;
     border-radius: 25%;
@@ -125,7 +129,7 @@ main {
     height: 60px;
     box-shadow: 2px 2px 20px 20px rgba(5, 61, 30, 0.25);
     flex-wrap: wrap;
-    flex-basis: content;
+    justify-content: center;
     justify-content: space-between;
 }
 
@@ -185,6 +189,7 @@ footer h4 {
 
 @media screen and (max-width: 320px){
     body {
+
         flex-direction: column;
         flex-wrap: wrap;
         flex: 0 2;
@@ -194,7 +199,7 @@ footer h4 {
         float: none;
         width: 100%;
     }
-
+    
 }
 
 
