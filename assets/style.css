@@ -87,19 +87,19 @@ main {
     background-color:rgb(24, 121, 113);
     opacity: 0.5;
     color: whitesmoke;
-   float: center;
    flex-direction: column;
-   -ms-flex-align: center;
    flex-wrap: wrap;
 }
 
+header {
+    padding: 50px;
+}
 
 .works1 {
     display: flex;
     border-style: solid;
     border-width: 2px;
     border-radius: 25%;
-    padding: 10px;
     margin: 20px;
     width: 200px;
     height: 100px;
@@ -113,6 +113,7 @@ main {
     border-radius: 25%;
     font-size: 16px;
     margin-top: -40px;
+    text-align: center;
 }
 
 .works1 img {
@@ -123,29 +124,31 @@ main {
     padding: 0%;
 }
 
-
-
+/*removed padding to the .works and .works1 sections, fitted image in box*/
 
 .works {
     display: flex;
     border-style: solid;
     border-width: 2px;
     border-radius: 25%;
-    padding: 10px;
     margin: 20px;
     width: 100px;
     height: 60px;
     box-shadow: 2px 2px 20px 20px rgba(5, 61, 30, 0.25);
     flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
     justify-content: center;
     justify-content: space-between;
 }
+
+
 
 .works h1 {
     border-radius: 25%;
     font-size: 12px;
     margin-top: -25px;
-    
+    text-align: center;
 }
 
 .works img {
@@ -217,6 +220,13 @@ footer h4 {
         width: 100%;
     }
     
+    .mypics {
+        height: 300px;
+    }
+
+    .work {
+        height: 400px;
+    }
 }
 
 
