@@ -87,6 +87,7 @@ main {
     background-color:rgb(24, 121, 113);
     opacity: 0.5;
     color: whitesmoke;
+    
    flex-direction: column;
    flex-wrap: wrap;
 }
@@ -197,35 +198,47 @@ footer h4 {
 /*had help from my teacher and t/a, i ended up going backward on this one, next time will do the 
         proper way of styling from small to large screen sizes using min-width(think min-width was way to go they said, double check)*/
 
+@media screen and (min-width: 1024) {
+    body {
+        flex-direction: column;
+        flex-wrap: wrap;
+    
+    }
+    nav a,
+    ul, li{
+        justify-content: flex-start;
+        
+    }
+}
+
+
 @media screen and (max-width: 768px) {
     body {
       flex-direction: column;
       flex-wrap: wrap;
       flex: 0 2;
     }
+    nav, header {
+        justify-content: center;
+        
+    }
   }
 
-@media screen and (max-width: 320px){
+@media screen and (min-width: 320px){
+   
     body {
-
+        display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         flex: 0 2;
     }
-
-     nav {
-        float: none;
-        width: 100%;
+    
+    .work {
+        height: 600px;
     }
     
-    .mypics {
-        height: 300px;
-    }
-
-    .work {
-        height: 400px;
-    }
 }
+
 
 
 /* This is code i ended up omitting, this is my second model of this assignment so i borrowed code
