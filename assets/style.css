@@ -80,16 +80,15 @@ main {
 /*.works1 and .works are the sections i gave each item in .work..should improve this technique (naming and section styling) as class goes on*/
 
 .work {
-    display: flex;
+    display: inline-block;
     margin-bottom: 20px;
     padding: 0;
     height: 600px;
     background-color:rgb(24, 121, 113);
     opacity: 0.5;
     color: whitesmoke;
-    
-   flex-direction: column;
-   flex-wrap: wrap;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 header {
@@ -222,6 +221,20 @@ footer h4 {
         justify-content: center;
         
     }
+    /*.works {
+        display: flex;
+        border-style: solid;
+        border-width: 2px;
+        border-radius: 25%;
+        margin: 20px;
+        width: 200px;
+        height: 60px;
+        box-shadow: 2px 2px 20px 20px rgba(5, 61, 30, 0.25);
+        flex-wrap: wrap;
+        justify-content: center;
+        justify-content: space-between;
+    }*/
+    
   }
 
 @media screen and (min-width: 320px){
@@ -234,7 +247,7 @@ footer h4 {
     }
     
     .work {
-        height: 600px;
+        height: 800px;
     }
     
 }
