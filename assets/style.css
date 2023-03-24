@@ -80,7 +80,7 @@ main {
 /*.works1 and .works are the sections i gave each item in .work..should improve this technique (naming and section styling) as class goes on*/
 
 .work {
-    display: inline-block;
+    display: flex;
     margin-bottom: 20px;
     padding: 0;
     height: 600px;
@@ -89,13 +89,14 @@ main {
     color: whitesmoke;
     flex-direction: column;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 header {
     padding: 50px;
 }
 
-.works1 {
+.card1 {
     display: flex;
     border-style: solid;
     border-width: 2px;
@@ -109,14 +110,14 @@ header {
     flex-wrap: wrap;
 }
 
-.works1 h1 {
+.card1 h1 {
     border-radius: 25%;
     font-size: 16px;
     margin-top: -40px;
     text-align: center;
 }
 
-.works1 img {
+.card1 img {
     max-width: 100%;
     border-radius: 25%;
     width: 200px;
@@ -126,7 +127,7 @@ header {
 
 /*removed padding to the .works and .works1 sections, fitted image in box*/
 
-.works {
+.card {
     display: flex;
     border-style: solid;
     border-width: 2px;
@@ -142,14 +143,14 @@ header {
 
 
 
-.works h1 {
+.card h1 {
     border-radius: 25%;
     font-size: 12px;
     margin-top: -25px;
     text-align: center;
 }
 
-.works img {
+.card img {
     max-width: 100%;
     border-radius: 25%;
     width: 140px;
