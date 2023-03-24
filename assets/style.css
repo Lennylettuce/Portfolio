@@ -253,7 +253,11 @@ footer h4 {
     
 }
 
-
+@media screen and (max-width: 320px){
+    .mypics{
+        height: 400px;
+    }
+}
 
 /* This is code i ended up omitting, this is my second model of this assignment so i borrowed code
  from that one(named Aubrey Portfolio in my github) plus sources cited within that one's README.md
